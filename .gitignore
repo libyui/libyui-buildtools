@@ -3,13 +3,11 @@
 
 # but these
 !CMakeLists.txt
-!config.h.in
-!Doxyfile.in
+!*.in
 !INSTALL
 !INSTRUCTIONS
 !macros.cmake
 !MAINTAINER
 !Makefile.cvs
 !README*
-!template*.in
 !*.yui-skel
