@@ -1,0 +1,14 @@
+# ignore all
+*
+
+# but these
+!*.cmake*
+!CMakeLists.txt
+!config.h.in
+!Doxyfile.in
+!INSTALL
+!INSTRUCTIONS
+!MAINTAINER
+!Makefile.cvs
+!README*
+!template*.in
