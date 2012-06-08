@@ -3,11 +3,10 @@
 
 # but these
 !CMakeLists.txt
-!*.in
 !INSTALL
 !INSTRUCTIONS
 !macros.cmake
 !MAINTAINER
 !Makefile.cvs
 !README*
-!*.yui-skel
+!*.skel
