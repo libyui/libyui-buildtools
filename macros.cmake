@@ -322,14 +322,21 @@ MACRO( GEN_FILES )		# generate files from templates
     @ONLY
   )
 
-  CONFIGURE_FILE(
-    "${PROJECT_SOURCE_DIR}/resource/config.h.in"
-    "${PROJECT_BINARY_DIR}/src/${PROJECTNAME_UC}_config.h"
-    @ONLY
-  )
+  IF( NOT PLUGINNAME )
+    CONFIGURE_FILE(
+      "${PROJECT_SOURCE_DIR}/resource/config.h.in"
+      "${PROJECT_BINARY_DIR}/src/${PROJECTNAME_UC}_config.h"
+      @ONLY
+    )
 
-  FOREACH( p "${PROJECTNAME_UC}Config.cmake" "${PROJECTNAME_UC}ConfigVersion.cmake" "${PROJECTNAME}.pc"
-           "src/${PROJECTNAME_UC}_config.h" )
+    CONFIGURE_FILE(
+      "${PROJECT_BINARY_DIR}/src/${PROJECTNAME_UC}_config.h"
+      "${PROJECT_BINARY_DIR}/src/${PROJECTNAME_UC}_config.h"
+      @ONLY
+    )
+  ENDIF( NOT PLUGINNAME )
+
+  FOREACH( p "${PROJECTNAME_UC}Config.cmake" "${PROJECTNAME_UC}ConfigVersion.cmake" "${PROJECTNAME}.pc" )
     CONFIGURE_FILE(
       "${PROJECT_BINARY_DIR}/${p}"
       "${PROJECT_BINARY_DIR}/${p}"
