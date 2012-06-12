@@ -156,6 +156,12 @@ MACRO( FIND_LIB_DEPENDENCIES )	# try to find all libs from ${LIB_DEPS}
     SET( ${LIB_LINKER} ${${p}_LIBRARIES} ${LIB_LINKER} )
   ENDFOREACH()
 
+  IF( PLUGINNAME )
+    FOREACH( p "" _MAJOR _MINOR _PATCH )
+      SET( SONAME${p} "${Lib${BASENAME}_SONAME${p}}")
+    ENDFOREACH()
+  ENDIF( PLUGINNAME )
+
 ENDMACRO( FIND_LIB_DEPENDENCIES )
 
 MACRO( FIND_LINKER_LIBS )	# try to find all libs to be linked against
