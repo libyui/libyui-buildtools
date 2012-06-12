@@ -1,0 +1,12 @@
+SET( ${TARGETLIB}_SOURCES
+  ##### Here go the source files
+)
+
+SET( ${TARGETLIB}_HEADERS
+  ##### Here go the headers
+)
+
+SET( EXAMPLES_LIST
+  ##### Here go the examples
+)
+
