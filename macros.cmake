@@ -160,7 +160,7 @@ MACRO( FIND_LIB_DEPENDENCIES )	# try to find all libs from ${LIB_DEPS}
 
   IF( PLUGINNAME )
     FOREACH( p "" _MAJOR _MINOR _PATCH )
-      SET( SONAME${p} "${Lib${BASENAME}_SONAME${p}}")
+      SET( SONAME${p} "${Lib${BASELIB}_SONAME${p}}")
     ENDFOREACH()
   ENDIF( PLUGINNAME )
 
