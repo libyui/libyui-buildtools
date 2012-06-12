@@ -6,6 +6,7 @@ SET( ${TARGETLIB}_SOURCES
 
 SET( ${TARGETLIB}_HEADERS
   ##### Here go the headers
+  "${CMAKE_CURRENT_BINARY_DIR}/${PROJECTNAME_UC}_config.h"
 )
 
 IF( DISABLE_SHARED )
