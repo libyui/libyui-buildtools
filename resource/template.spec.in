@@ -79,7 +79,6 @@ make %{?jobs:-j%jobs}
 %install
 cd build
 make install DESTDIR="$RPM_BUILD_ROOT"
-install -d %{buildroot}%{_libdir}/@BASELIB@
 
 %clean
 rm -rf "$RPM_BUILD_ROOT"
