@@ -302,12 +302,6 @@ ENDMACRO( GEN_EXPORTS )
 
 MACRO( GEN_FILES )		# generate files from templates
 
-  FILE(
-    RELATIVE_PATH CONF_REL_INCLUDE_DIR
-    "${INSTALL_CMAKE_DIR_PREFIX}"
-     "${INSTALL_INCLUDE_DIR_PREFIX}"
-  )
-
   FOREACH( p BuildTreeSettings.cmake Config.cmake ConfigVersion.cmake )
     CONFIGURE_FILE(
       "${PROJECT_SOURCE_DIR}/resource/${p}.in"
