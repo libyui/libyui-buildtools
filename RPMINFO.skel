@@ -2,11 +2,11 @@
 #####
 ##### THIS IS THE INFO REQUIRED FOR SPEC-FILE GENERATION
 
-SET( SPEC_URL			"http://github.com/libyui/" )							# the URL of the project
+SET( SPEC_Url			"http://github.com/libyui/" )							# the URL of the project
 
-SET( SPEC_SUMMARY		"" )										# some brief summary
+SET( SPEC_Summary		"" )										# some brief summary
 
-SET( SPEC_DESCRIPTION		"\n" )										# the description to be used, end each line with "\n" for line-breaks
+SET( SPEC_Description		"\n" )										# the description to be used, end each line with "\n" for line-breaks
 
 SET( SPEC_BuildRequires		"cmake >= 2.8" )								# the BuildRequires every single pkg wrapped with "" and speparated with spaces
 
