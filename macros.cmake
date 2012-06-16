@@ -166,6 +166,10 @@ MACRO( FIND_LIB_DEPENDENCIES )	# try to find all libs from ${LIB_DEPS}
     ENDFOREACH()
   ENDIF( PLUGINNAME )
 
+  IF( QT_FOUND )
+    SET( CMAKE_INCLUDE_PATH "${CMAKE_INCLUDE_PATH}" ${QT_INCLUDES} )
+  ENDIF( QT_FOUND )
+
 ENDMACRO( FIND_LIB_DEPENDENCIES )
 
 MACRO( FIND_LINKER_LIBS )	# try to find all libs to be linked against

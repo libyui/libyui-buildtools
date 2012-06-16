@@ -6,7 +6,10 @@ SET( ${TARGETLIB}_HEADERS
   ##### Here go the headers
 )
 
+SET( ${TARGETLIB}_WRAP_UI
+  ##### Here go files needed for QT_WRAP_UI
+)
+
 SET( EXAMPLES_LIST
   ##### Here go the examples
 )
-
