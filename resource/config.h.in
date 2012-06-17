@@ -50,7 +50,7 @@
 
 /*-/
 
-  File:  config.h
+  File:  Lib@BASELIB@_config.h
 
   Author: Björn Esser <bjoern.esser@gmail.com>
 
@@ -58,6 +58,8 @@
 #ifndef @PROJECTNAME_UC@_CONFIG_H
 #define @PROJECTNAME_UC@_CONFIG_H
 
+#define DATADIR		"@PREFIX@/@FULL_DATA_DIR@"
+#define LANG_FONTS_FILE	"@PREFIX@/@FULL_DATA_DIR@/data/lang_fonts"
 #define LOCALEDIR	"@PREFIX@/@DATAROOTDIR@/locale"
 #define PLUGINDIR	"@PREFIX@/@LIB_DIR_PLAIN@/@BASELIB@"
 #define THEMEDIR	"@PREFIX@/@THEME_DIR@"
