@@ -1,1 +1,4 @@
-![libYUI-boilerplate](http://img191.imageshack.us/img191/9364/libyui.png)
+The contents of this repository has been incorporated into the
+[`buildtools/`](https://github.com/libyui/libyui/tree/master/buildtools)
+ subdirectory of the
+[common libyui repository](https://github.com/libyui/libyui).
